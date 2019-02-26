@@ -48,26 +48,26 @@ CLOUD_PROJECT = (
 )
 
 DOWNSTREAM_PROJECTS = {
-    "Bazel skylib": {
-        "git_repository": "https://github.com/bazelbuild/bazel-skylib.git",
-        "http_config": "https://raw.githubusercontent.com/bazelbuild/bazel-skylib/master/.bazelci/presubmit.yml",
-        "pipeline_slug": "bazel-skylib",
-    },
-    "BUILD file generator": {
-        "git_repository": "https://github.com/bazelbuild/BUILD_file_generator.git",
-        "http_config": "https://raw.githubusercontent.com/bazelbuild/BUILD_file_generator/master/.bazelci/presubmit.yml",
-        "pipeline_slug": "build-file-generator",
-    },
-    "Buildtools": {
-        "git_repository": "https://github.com/bazelbuild/buildtools.git",
-        "http_config": "https://raw.githubusercontent.com/bazelbuild/buildtools/master/.bazelci/presubmit.yml",
-        "pipeline_slug": "buildtools",
-    },
-    "Protobuf": {
-        "git_repository": "https://github.com/google/protobuf.git",
-        "http_config": "https://raw.githubusercontent.com/bazelbuild/continuous-integration/master/buildkite/pipelines/protobuf-postsubmit.yml",
-        "pipeline_slug": "protobuf",
-    },
+    # "Bazel skylib": {
+    #     "git_repository": "https://github.com/bazelbuild/bazel-skylib.git",
+    #     "http_config": "https://raw.githubusercontent.com/bazelbuild/bazel-skylib/master/.bazelci/presubmit.yml",
+    #     "pipeline_slug": "bazel-skylib",
+    # },
+    # "BUILD file generator": {
+    #     "git_repository": "https://github.com/bazelbuild/BUILD_file_generator.git",
+    #     "http_config": "https://raw.githubusercontent.com/bazelbuild/BUILD_file_generator/master/.bazelci/presubmit.yml",
+    #     "pipeline_slug": "build-file-generator",
+    # },
+    # "Buildtools": {
+    #     "git_repository": "https://github.com/bazelbuild/buildtools.git",
+    #     "http_config": "https://raw.githubusercontent.com/bazelbuild/buildtools/master/.bazelci/presubmit.yml",
+    #     "pipeline_slug": "buildtools",
+    # },
+    # "Protobuf": {
+    #     "git_repository": "https://github.com/google/protobuf.git",
+    #     "http_config": "https://raw.githubusercontent.com/bazelbuild/continuous-integration/master/buildkite/pipelines/protobuf-postsubmit.yml",
+    #     "pipeline_slug": "protobuf",
+    # },
 }
 
 
