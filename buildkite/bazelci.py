@@ -1224,7 +1224,7 @@ def fetch_incompatible_flag_verbose_failures_command():
 
 def fetch_aggregate_incompatible_flags_test_result_command():
     return "curl -sS {0} -o aggregate_incompatible_flags_test_result.py".format(
-        incompatible_flag_verbose_failures_url()
+        aggregate_incompatible_flags_test_result_url()
     )
 
 
