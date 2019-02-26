@@ -1500,11 +1500,11 @@ def print_bazel_downstream_pipeline(
             )
 
     if test_incompatible_flags:
-        pipeline_steps.append({"wait": "~", "continue_on_failure": "true"})
         current_build_number = os.environ.get("BUILDKITE_BUILD_NUMBER", None)
         if not current_build_number:
             raise BuildkiteException("Not running inside Buildkite")
         if use_bazelisk_migrate():
+            pipeline_steps.append({"wait": "~", "continue_on_failure": "true"})
             pipeline_steps.append(
                 create_step(
                     label="Aggregate incompatible flags test result",
@@ -1518,6 +1518,7 @@ def print_bazel_downstream_pipeline(
                 )
             )
         else:
+            pipeline_steps.append({"wait": "~", "continue_on_failure": "true"})
             pipeline_steps.append(
                 create_step(
                     label="Test failing jobs with incompatible flag separately",

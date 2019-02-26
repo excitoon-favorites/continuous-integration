@@ -76,12 +76,14 @@ def get_build_info(build_number):
 
 def print_result_info_jobs(build_number):
     info_text = ["Hello buildkite"]
-    return create_step(
+    pipeline_steps = []
+    pipeline_steps.append(bazelci.create_step(
         label="Hello buildkite",
         commands=[
             'buildkite-agent annotate --append --style=info "\n' + "\n".join(info_text) + '\n"'
         ],
-    )
+    ))
+    print(yaml.dump({"steps": pipeline_steps}))
 
 def main(argv=None):
     if argv is None:
