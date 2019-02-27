@@ -58,16 +58,16 @@ DOWNSTREAM_PROJECTS = {
     #     "http_config": "https://raw.githubusercontent.com/bazelbuild/BUILD_file_generator/master/.bazelci/presubmit.yml",
     #     "pipeline_slug": "build-file-generator",
     # },
-    # "Buildtools": {
-    #     "git_repository": "https://github.com/bazelbuild/buildtools.git",
-    #     "http_config": "https://raw.githubusercontent.com/bazelbuild/buildtools/master/.bazelci/presubmit.yml",
-    #     "pipeline_slug": "buildtools",
-    # },
-    # "Protobuf": {
-    #     "git_repository": "https://github.com/google/protobuf.git",
-    #     "http_config": "https://raw.githubusercontent.com/bazelbuild/continuous-integration/master/buildkite/pipelines/protobuf-postsubmit.yml",
-    #     "pipeline_slug": "protobuf",
-    # },
+    "Buildtools": {
+        "git_repository": "https://github.com/bazelbuild/buildtools.git",
+        "http_config": "https://raw.githubusercontent.com/bazelbuild/buildtools/master/.bazelci/presubmit.yml",
+        "pipeline_slug": "buildtools",
+    },
+    "Protobuf": {
+        "git_repository": "https://github.com/google/protobuf.git",
+        "http_config": "https://raw.githubusercontent.com/bazelbuild/continuous-integration/master/buildkite/pipelines/protobuf-postsubmit.yml",
+        "pipeline_slug": "protobuf",
+    },
 }
 
 

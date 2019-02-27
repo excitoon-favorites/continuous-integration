@@ -80,19 +80,19 @@ def print_result_info_jobs(build_number):
     pipeline_steps.append(bazelci.create_step(
         label="Hello buildkite",
         commands=[
-            'buildkite-agent annotate --append --style=info "\n' + "\n".join(info_text) + '\n"'
+            'buildkite-agent annotate --context="Say hello" --style=info "\n' + "\n".join(info_text) + '\n"'
         ],
     ))
     pipeline_steps.append(bazelci.create_step(
         label="Success",
         commands=[
-            'buildkite-agent annotate --append --style=success "\n' + "\n".join(info_text) + '\n"'
+            'buildkite-agent annotate --context="Say success" --style=success "\n' + "\n".join(info_text) + '\n"'
         ],
     ))
     pipeline_steps.append(bazelci.create_step(
         label="Failure",
         commands=[
-            'buildkite-agent annotate --append --style=error "\n' + "\n".join(info_text) + '\n"'
+            'buildkite-agent annotate --context="Say error" --style=error "\n' + "\n".join(info_text) + '\n"'
         ],
     ))
     print(yaml.dump({"steps": pipeline_steps}))
